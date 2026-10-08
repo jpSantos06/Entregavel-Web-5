@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buscador de CEP e Mini Pokédex</title>
+</head>
+
+<body>
+
+    <h1>Buscador de CEP</h1>
+
+    <form id="formCep">
+        <label for="cep">Digite o CEP:</label>
+
+        <input
+            type="text"
+            id="cep"
+            placeholder="Ex: 01001000"
+            maxlength="8"
+        >
+
+        <button type="submit" id="botaoCep">
+            Buscar CEP
+        </button>
+    </form>
+
+    <p id="statusCep"></p>
+
+    <dl id="resultadoCep"></dl>
+
+    <h2>Histórico de CEPs</h2>
+
+    <ul id="historicoCep"></ul>
+
+
+    <hr>
+
+
+    <h1>Mini Pokédex</h1>
+
+    <form id="formPokemon">
+
+        <label for="pokemon">
+            Digite o nome do Pokémon:
+        </label>
+
+        <input
+            type="text"
+            id="pokemon"
+            placeholder="Ex: pikachu"
+        >
+
+        <button type="submit" id="botaoPokemon">
+            Buscar Pokémon
+        </button>
+
+    </form>
+
+    <p id="statusPokemon"></p>
+
+    <div id="resultadoPokemon"></div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
